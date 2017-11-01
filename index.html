@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Parking garages in Amsterdam </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body>
+
+ <header>
+    <p>PARKING GARAGES IN AMSTERDAM</p>
+    <p>(Click the spots to see the parking garage)</p>
+ </header>
+
+<section>
+
+<!-- Javascript library leaflet is used to display the map and parking locations -->
+
+<div id="mapid"></div>
+
+<script >
+var mymap = L.map('mapid').setView([52.368585, 4.894448], 12);
+
+L.tileLayer('http://tiles.waag.org/v2/citysdk/{z}/{x}/{y}.png',{minZoom : 4, maxZoom : 16,opacity : 1,attribution : 'Map Data'
+}).addTo(mymap);
+
+var circle = L.circle([52.38482, 4.89475], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> IJDOCK </center> <img src ='images//Ijdock.jpg'>");
+
+var circle = L.circle([52.3362, 4.8609], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> GUSTAV MAHLERLAAN </center> <img src ='images//Vumc.jpg'>");
+
+var circle = L.circle([52.34379, 4.8572], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> OLYMPISCH STADION </center> <img src ='images//Olympic.jpg'>");
+
+var circle = L.circle([52.31086, 4.93985], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> MIKADO </center> <img src ='images//Mikado.jpg'>");
+
+var circle = L.circle([52.3849, 4.88464], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> WILLEMSPOORT </center> <img src ='images//Willemspoort.jpg'>");
+
+var circle = L.circle([52.31409, 4.94105], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> P+R AMSTERDAM ARENA </center> <img src ='images//Prarena.jpg'>");
+
+var circle = L.circle([52.36981, 4.90857], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> MARKENHOVEN </center> <img src ='images//Markenhoven.jpg'>");
+
+var circle = L.circle([52.31542, 4.93131], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> BORCHLANDWEG TERRAIN </center> <img src ='images//Terreinarena.jpg'>");
+
+var circle = L.circle([52.31409, 4.943], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> AMSTERDAM ARENA </center> <img src ='images//P1arena.jpg'>");
+
+var circle = L.circle([52.31413, 4.95059], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> BIJLMERDREEF P21 </center> <img src ='images//Bijlmerdreefp21.jpg'>");
+
+var circle = L.circle([52.31522, 4.94731], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> HOEKENRODE </center> <img src ='images//Hesroc.jpg'>");
+
+var circle = L.circle([52.37788, 4.91539], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> PIET HEIN </center> <img src ='images//Piethein.jpg'>");
+
+var circle = L.circle([52.35726, 4.87944], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> MUSEUMPLEIN </center> <img src ='images//Museumplein.jpg'>");
+
+var circle = L.circle([52.3619, 4.88001], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> BYZANTIUM </center> <img src ='images//Byzantium.jpg'>");
+
+var circle = L.circle([52.312, 4.93866], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> VILLA ARENA </center> <img src ='images//Villaarena.jpg'>");
+
+var circle = L.circle([52.36921, 4.90437], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> WATERLOOPLEIN </center> <img src ='images//Waterlooplein.jpg'>");
+
+var circle = L.circle([52.3078, 4.9413], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> PLAZA  ARENA </center> <img src ='images//Plazaarena.jpeg'>");
+
+var circle = L.circle([52.36758, 4.90041], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> STADHUIS/MUZIEKTHEATER </center> <img src ='images//Stadhuis.jpg'>");
+
+var circle = L.circle([52.36988, 4.96447], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> ZEEBURG </center> <img src ='images//Zeeburg.jpg'>");
+
+var circle = L.circle([52.31765, 4.95546], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> BIJLMERDREEF P23 </center> <img src ='images//Bijlmerdreefp23.jpg'>");
+
+var circle = L.circle([52.39009, 4.83811], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> SLOTERDIJK </center> <img src ='images//Sloterdijk.jpg'>");
+
+var circle = L.circle([52.38462, 4.86627], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> WESTERPARK </center> <img src ='images//Westerpark.jpg'>");
+
+var circle = L.circle([52.37933, 4.84537], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> BOS EN LOMMER </center> <img src ='images//Bosenlommer.jpg'>");
+
+var circle = L.circle([52.37639, 4.89459], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> DE KOLK </center> <img src ='images//Dekolk.jpg'>");
+
+var circle = L.circle([52.3125, 4.94441], {
+color : '#2da09a',
+fillColor: '#2da09a',
+fillOpacity: 0.9,
+radius: 10
+}).addTo(mymap).bindPopup("<center> PATHE BIJLMERARENA </center> <img src ='images//Pathe.jpg'>");
+
+</script>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<table>
+  <tr>
+    <th>Parking Garage </th>
+    <th>Parking Capacity</th>
+    <th>Available Parking</th>
+    <th>Status</th>
+</tr>
+<tr ng-repeat = "x in myWelcome">
+     <td>{{ x.properties.title }}</td>
+     <td>{{ x.properties.layers["parking.garage"].data.ShortCapacity }}</td>
+     <td id="parking">{{ x.properties.layers["parking.garage"].data.FreeSpaceShort }}</td>
+     <td ng-show="x.check==0"><img src='images//Redlight.png' class='statusimg'></img></td>
+     <td ng-show="x.check==1"><img src='images//Green.jpg' class='statusimg'></img></td>
+     <td ng-show="x.check==2">Wait for data!!!</td>
+</tr>
+</table>
+
+</div>
+
+</section>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http, $log) {
+      $http.get("http://api.citysdk.waag.org/layers/parking.garage/objects?per_page=25")
+    .then(function(response) {
+        $scope.myWelcome = response.data.features;
+         for(var i=0; i<$scope.myWelcome.length; i++)
+           {
+             var check;
+             if($scope.myWelcome[i].properties.layers["parking.garage"].data.FreeSpaceShort ==0)
+              {
+                $scope.myWelcome[i].check = 0;
+              }
+             else
+              {
+                $scope.myWelcome[i].check = 1;
+              }
+              if($scope.myWelcome[i].properties.layers["parking.garage"].data.FreeSpaceShort ==null)
+               {
+                 $scope.myWelcome[i].check = 2;
+               }
+
+            }
+
+    });
+
+});
+</script>
+
+</body>
+</html>
