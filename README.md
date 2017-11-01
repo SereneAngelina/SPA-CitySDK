@@ -12,21 +12,21 @@
 ## Requirements
 
   * This project uses the following API :
-            - http://api.citysdk.waag.org/layers/parking.garage/objects?per_page=25
+    - http://api.citysdk.waag.org/layers/parking.garage/objects?per_page=25
 
   * This project uses the following libraries :
-            - https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css
-            - https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js
-            - http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js
+    - https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css
+    - https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js
+    - http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js
 
 ## Installation
 
-      * Clone the project
-      * Open the index.html file in any of the browsers(IE Explorer, Google Chrome, etc.)
+  * Clone the project
+  * Open the index.html file in any of the browsers(IE Explorer, Google Chrome, etc.)
 
 
 ## Build With
 
-     * Javascript library Leaflet
-     * HTML & CSS
-     * AngularJS
+  * Javascript library Leaflet
+  * HTML & CSS
+  * AngularJS
